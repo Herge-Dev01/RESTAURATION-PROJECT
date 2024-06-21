@@ -34,18 +34,39 @@ nav {
     cursor: pointer;
 }
 
+/*
+.logo-container {
+  position: relative;
+  z-index: 1;
+}
 
 .logo {
-    width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.checkbtn {
+  position: relative;
+  z-index: 3;
+}
+*/
+
+.logo {
+    width: 100px;
     position: absolute;
     color: white;
     line-height: 40px;
     padding: 5px;
-    font-weight: bold;
+    top: 0;
+    left: 0;
+    font-family: cursive;
     cursor: pointer;
+    z-index: 3;
 }
 
-.image-logo {
+.logo > img {
     width: 100px;
     height: 100px;
     margin: 0;
@@ -53,7 +74,8 @@ nav {
     position: relative;
     opacity: 1;
     margin-top: -10px;
-   filter: invert(100%);
+    filter: invert(100%);
+    z-index: 2;
 }
 
 .logo span {
@@ -86,6 +108,7 @@ nav ul li a {
     font-family: sans-serif;
     font-weight: bold;
     list-style : none;
+    z-index: 1;
     text-decoration: none;
     overflow: hidden;
 }
@@ -127,7 +150,7 @@ transition: 1s ease-out;
 
     .logo > span {
         float: left;
-        margin-left: -20px;
+        margin-left: 5px;
     }
 
 
@@ -193,13 +216,13 @@ transition: 1s ease-out;
     nav ul li a {
 
         font-size: 20px;
-        color: #000;
+        color: #fff;
 
     }
 
     a:hover,.active {
 
-        color: #000;
+        color: #fff;
 
     }
 

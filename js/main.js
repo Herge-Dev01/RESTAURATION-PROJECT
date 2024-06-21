@@ -1,13 +1,15 @@
-const navLinks = document.querySelectorAll('nav ul li a');
 
+
+const navLinks = document.querySelectorAll('li a');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
        
-        navLinks.forEach(l => l.classList.remove('active'));
+        navLinks.forEach(el => el.classList.remove('active'));
 
         link.classList.add('active');
+    
+        });
     });
-});
 
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
