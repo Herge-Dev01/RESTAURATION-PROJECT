@@ -1,0 +1,11 @@
+	 		Restauration
+
+	Page d'accueil
+	About + Historique
+	Menu
+	Activites
+	Horaire d'ouverture
+	Contact
+	Footer
+	
+	
